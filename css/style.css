@@ -29,13 +29,12 @@ body {
 
 
 .navLinks ul{
+  margin-right: 30px;
   display: flex;
 }
 
 .navLinks {
-  margin: 30px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -44,10 +43,16 @@ body {
 }
 
 .navLinks ul li a {
-  font-size: 1.2rem;
   margin: 20px;
   text-decoration: none;
   color: #ffffff82;
+}
+
+/* Animação da navBar */
+
+
+.navLinks ul li a:hover {
+  border-bottom: solid 1px #ffffff8f;
 }
 
 .navLinks #home a{
@@ -88,3 +93,33 @@ body {
 .button button:hover {
   cursor: pointer;
 }
+
+/* Menu hamburguer */
+
+
+#menuHamburguer {
+  display: none;
+  cursor: pointer
+}
+
+.menu {
+  border-radius: 13%;
+  margin: 7px;
+  height: 5px;
+  width: 45px;
+  background: #ffff;
+}
+
+
+/* Responsivo */
+
+@media screen and (max-width: 1200px) {
+  .navLinks {
+    display: none;
+  }
+  #menuHamburguer {
+    margin: 25px;
+    display: block;
+  }
+}
+
